@@ -1,0 +1,195 @@
+@media (min-width: 767px) and (max-width: 1200px) {
+  .container {
+    padding: 0 24px;
+  }
+
+  /* Хедер */
+  .header__burger-btn {
+    position: relative;
+    margin-right: 42px;
+  }
+
+  .header__burger-btn::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: -22px;
+    display: block;
+    width: 2px;
+    height: 32px;
+    background-color: var(--grey-element-color);
+  }
+
+  .header__btns-contact {
+    display: block;
+    margin-left: auto;
+  }
+
+  .header__btns-contact button:not(:last-child) {
+    margin-right: 11px;
+  }
+
+  .header__btns-service {
+    margin-left: 42px;
+  }
+
+  /* Хироу */
+  .hero__container {
+    padding: 0 0 0 10px;
+  }
+
+  .hero__heading {
+    margin-bottom: 32px;
+  }
+
+  .hero__heading::before {
+    left: -25px;
+  }
+
+  .hero__nav {
+    margin-bottom: 29px;
+  }
+
+  .hero__bottom {
+    display: flex;
+  }
+
+  .hero__content {
+    width: 49%;
+  }
+
+  .hero__image {
+    width: 50%;
+  }
+
+  .hero__image img {
+    border-radius: 3%;
+    width: 100%;
+  }
+
+  .hero__parag {
+    margin-bottom: 2px;
+    max-width: 85%;
+    line-height: 20px;
+  }
+
+  .hero__text {
+    margin-bottom: 19px;
+  }
+
+  #span {
+    display: block;
+  }
+}
+
+@media (min-width: 1060px) {
+  .services__list {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1119px) {
+  /* Хедер */
+  .header {
+    padding-top: 41px;
+    background-color: initial;
+  }
+
+  .header__container {
+    padding: 0 31px;
+  }
+
+  .header__container .header__burger-btn,
+  .header__container .header__logo,
+  .header__container .header__btns-contact {
+    display: none;
+  }
+
+  .header__btns-service {
+    margin: 0;
+    margin-left: auto;
+  }
+
+  .header__btns-service::before {
+    display: none;
+  }
+
+  .btns-service {
+    display: flex;
+  }
+
+  .btns-service button:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .btns-service button {
+    display: flex;
+    align-items: center;
+    width: 173px;
+  }
+
+  .btns-service button span {
+    display: block;
+    min-width: max-content;
+    margin-right: 10px;
+  }
+
+  /* Хироу */
+  .hero {
+    position: absolute;
+    top: 18px;
+  }
+
+  .hero__container {
+    padding: 0 0 0 17px;
+  }
+
+  .hero__heading {
+    margin-bottom: 10px;
+  }
+
+  .hero__nav {
+    margin-bottom: 45px;
+  }
+
+  .hero__content {
+    padding-top: 8px;
+  }
+
+  .hero__parag {
+    margin-bottom: 7px;
+    max-width: 97%;
+    letter-spacing: 0.5px;
+  }
+
+  #more,
+  #span {
+    display: inline;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services__list {
+    justify-content: space-between;
+  }
+
+  .hero__container {
+    padding: 0 17px 0 17px;
+  }
+
+  .hero__nav {
+    margin-bottom: 15px;
+  }
+
+  .hero__content {
+    padding-top: 0;
+  }
+
+  .hero__image {
+    padding-left: 16px;
+  }
+
+  .hero__image img {
+    width: 50%;
+  }
+}

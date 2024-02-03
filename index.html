@@ -3,12 +3,111 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+  <title>CPS</title>
 </head>
 
 <body>
-
+  <header class="header">
+    <div class="header__container container">
+      <button class="header__burger-btn btn" type="button">
+        <svg>
+          <use xlink:href="img/svg/sprite.svg#burger"></use>
+        </svg>
+      </button>
+      <a href="#" class="header__logo">
+        <img src="img/cps-logo.svg" alt="Логотип сайта">
+      </a>
+      <div class="header__btns-contact contacts">
+        <button class="contacts__btn btn" type="button">
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#call"></use>
+          </svg>
+        </button>
+        <button class="contacts__btn btn" type="button">
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#chat"></use>
+          </svg>
+        </button>
+        <button class="contacts__btn btn" type="button">
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#profile"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="header__btns-service btns-service">
+        <button class="btn" type="button">
+          <span>Оставить заявку</span>
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#repair"></use>
+          </svg>
+        </button>
+        <button class="btn" type="button">
+          <span>Статус ремонта</span>
+          <svg>
+            <use xlink:href="img/svg/sprite.svg#checkstatus"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero__container">
+        <h1 class="hero__heading">Услуги и сервисы</h1>
+        <nav class="hero__nav services">
+          <ul class="services__list list-reset">
+            <li class="services__item services__item--focus">
+              <a href="#" class="services__link">Ремонтируемые устройства</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Дополнительные услуги</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Цены на услуги</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Специальные цены</a>
+            </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Адреса сервисных центров</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="hero__bottom">
+          <div class="hero__content">
+            <div class="hero__parag">
+              <p class="hero__text">
+                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у&nbsp;нас вы
+                можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+              </p>
+              <p id="span">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера</p>
+              <p id="more">
+                , что подтверждает
+                большое
+                количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                очередь,
+                советуют нас родным и близким.
+              </p>
+            </div>
+            <button class="hero__button btn-read btn" type="button">
+              <span class="btn-read__icon"></span>
+              Читать далее
+            </button>
+          </div>
+          <div class="hero__image">
+            <img src="img/cps-photo.png" alt="Фотография компании" class="hero__image">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
 </body>
 
 </html>
