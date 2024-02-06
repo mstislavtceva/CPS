@@ -14,7 +14,7 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <button class="header__burger-btn btn" type="button">
+      <button class="header__burger-btn burger-btn btn" type="button">
         <svg>
           <use xlink:href="img/svg/sprite.svg#burger"></use>
         </svg>
@@ -57,8 +57,8 @@
   </header>
   <main>
     <section class="hero">
-      <div class="hero__container">
-        <h1 class="hero__heading">Услуги и сервисы</h1>
+      <div class="hero__container container-2">
+        <h1 class="hero__heading heading-1">Услуги и сервисы</h1>
         <nav class="hero__nav services">
           <ul class="services__list list-reset">
             <li class="services__item services__item--focus">
@@ -76,33 +76,38 @@
             <li class="services__item">
               <a href="#" class="services__link">Адреса сервисных центров</a>
             </li>
+            <li class="services__item">
+              <a href="#" class="services__link">Отзывы</a>
+            </li>
           </ul>
         </nav>
-        <div class="hero__bottom">
-          <div class="hero__content">
-            <div class="hero__parag">
-              <p class="hero__text">
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у&nbsp;нас вы
-                можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-              </p>
-              <p id="span">Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера</p>
-              <p id="more">
-                , что подтверждает
-                большое
-                количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь,
-                советуют нас родным и близким.
-              </p>
-            </div>
-            <button class="hero__button btn-read btn" type="button">
-              <span class="btn-read__icon"></span>
-              Читать далее
-            </button>
+      </div>
+    </section>
+    <section class="describe">
+      <div class="describe__container container-2">
+        <div class="describe__content">
+          <div class="describe__parag">
+            <p class="describe__text">
+              Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у&nbsp;нас вы
+              можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <p id="span">Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера</p>
+            <p id="more">
+              , что подтверждает
+              большое
+              количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь,
+              советуют нас родным и близким.
+            </p>
           </div>
-          <div class="hero__image">
-            <img src="img/cps-photo.png" alt="Фотография компании" class="hero__image">
-          </div>
+          <button class="describe__button-read btn-read btn" type="button">
+            <span class="btn-read__icon"></span>
+            Читать далее
+          </button>
+        </div>
+        <div class="describe__image">
+          <img src="img/cps-photo.png" alt="Фотография компании">
         </div>
       </div>
     </section>

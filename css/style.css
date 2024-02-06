@@ -114,8 +114,11 @@ body {
   margin-right: 16px;
 }
 
-.header__btns-contact,
-.header__btns-service button span {
+.header__btns-contact {
+  display: none;
+}
+
+.btns-service button span {
   display: none;
 }
 
@@ -124,7 +127,7 @@ body {
   margin-left: auto;
 }
 
-.header__btns-service::before {
+.btns-service::before {
   content: "";
   position: absolute;
   top: 5px;
@@ -142,7 +145,7 @@ body {
 /* Хироу */
 .hero {
   padding-top: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 12px;
 }
 
 .hero__heading {
@@ -150,17 +153,20 @@ body {
   padding-left: 16px;
   margin: 0;
   margin-bottom: 24px;
+}
+
+.heading-1 {
   font-weight: 700;
   font-size: 28px;
   line-height: 40px;
   letter-spacing: -1px;
 }
 
-.hero__heading::before {
+.heading-1::before {
   content: "";
   position: absolute;
   top: 0;
-  left: -18px;
+  left: 0;
   display: block;
   border-radius: 30%;
   width: 5px;
@@ -170,7 +176,6 @@ body {
 
 .hero__nav {
   padding-left: 16px;
-  margin-bottom: 20px;
 }
 
 .services__list {
@@ -195,26 +200,31 @@ body {
   border: 2px solid var(--green-element-color);
 }
 
-.hero__content {
+/* Дискрайб */
+.describe {
+  padding-top: 8px;
+}
+
+.describe__content {
   padding-left: 16px;
 }
 
-.hero__parag {
+.describe__parag {
   margin-bottom: 7px;
   max-width: 90%;
+  height: 90px;
   font-size: 14px;
   line-height: 18px;
   letter-spacing: 0.2px;
+  overflow-y: hidden;
 }
 
-#span,
-#more {
-  display: none;
+.describe__button-read {
+  margin-bottom: 8px;
 }
 
 .btn-read {
   padding: 5px;
-  margin-bottom: 8px;
   width: 140px;
   font-weight: 500;
   font-size: 16px;

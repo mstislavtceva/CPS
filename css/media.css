@@ -1,3 +1,22 @@
+@media (min-width: 767px) {
+  .describe__container {
+    display: flex;
+  }
+
+  .describe__content {
+    width: 49%;
+  }
+
+  .describe__image {
+    width: 50%;
+  }
+
+  .describe__image img {
+    border-radius: 3%;
+    width: 100%;
+  }
+}
+
 @media (min-width: 767px) and (max-width: 1200px) {
   .container {
     padding: 0 24px;
@@ -9,7 +28,7 @@
     margin-right: 42px;
   }
 
-  .header__burger-btn::after {
+  .burger-btn::after {
     content: "";
     position: absolute;
     top: 5px;
@@ -25,7 +44,7 @@
     margin-left: auto;
   }
 
-  .header__btns-contact button:not(:last-child) {
+  .contacts button:not(:last-child) {
     margin-right: 11px;
   }
 
@@ -34,7 +53,7 @@
   }
 
   /* Хироу */
-  .hero__container {
+  .container-2 {
     padding: 0 0 0 10px;
   }
 
@@ -42,61 +61,45 @@
     margin-bottom: 32px;
   }
 
-  .hero__heading::before {
-    left: -25px;
+  .heading-1::before {
+    left: -11px;
   }
 
-  .hero__nav {
-    margin-bottom: 29px;
+  /* Дискрайб */
+  .describe {
+    padding-top: 15px;
   }
 
-  .hero__bottom {
-    display: flex;
-  }
-
-  .hero__content {
-    width: 49%;
-  }
-
-  .hero__image {
-    width: 50%;
-  }
-
-  .hero__image img {
-    border-radius: 3%;
-    width: 100%;
-  }
-
-  .hero__parag {
+  .describe__parag {
     margin-bottom: 2px;
     max-width: 85%;
+    height: 160px;
     line-height: 20px;
   }
 
-  .hero__text {
+  .describe__text {
     margin-bottom: 19px;
-  }
-
-  #span {
-    display: block;
   }
 }
 
 @media (min-width: 1060px) {
   .services__list {
     overflow: hidden;
+    flex-wrap: wrap;
   }
 }
 
 @media (min-width: 1119px) {
   /* Хедер */
   .header {
+    position: relative;
     padding-top: 41px;
     background-color: initial;
+    z-index: 1;
   }
 
   .header__container {
-    padding: 0 31px;
+    padding: 0 27px 0 31px;
   }
 
   .header__container .header__burger-btn,
@@ -110,16 +113,13 @@
     margin-left: auto;
   }
 
-  .header__btns-service::before {
+  .btns-service::before {
     display: none;
   }
 
   .btns-service {
     display: flex;
-  }
-
-  .btns-service button:not(:last-child) {
-    margin-right: 30px;
+    gap: 18px;
   }
 
   .btns-service button {
@@ -136,11 +136,13 @@
 
   /* Хироу */
   .hero {
-    position: absolute;
-    top: 18px;
+    position: relative;
+    padding-bottom: 5px;
+    margin-top: -79px;
+    z-index: 0;
   }
 
-  .hero__container {
+  .container-2 {
     padding: 0 0 0 17px;
   }
 
@@ -148,48 +150,28 @@
     margin-bottom: 10px;
   }
 
-  .hero__nav {
-    margin-bottom: 45px;
+  .heading-1::before {
+    left: -17px;
   }
 
-  .hero__content {
+  /* Дискрайб */
+  .describe {
+    padding-top: 3px;
+  }
+
+  .describe__content {
     padding-top: 8px;
   }
 
-  .hero__parag {
+  .describe__parag {
     margin-bottom: 7px;
     max-width: 97%;
+    height: 160px;
     letter-spacing: 0.5px;
   }
 
   #more,
   #span {
     display: inline;
-  }
-}
-
-@media (min-width: 1200px) {
-  .services__list {
-    justify-content: space-between;
-  }
-
-  .hero__container {
-    padding: 0 17px 0 17px;
-  }
-
-  .hero__nav {
-    margin-bottom: 15px;
-  }
-
-  .hero__content {
-    padding-top: 0;
-  }
-
-  .hero__image {
-    padding-left: 16px;
-  }
-
-  .hero__image img {
-    width: 50%;
   }
 }
