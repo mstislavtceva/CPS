@@ -40,12 +40,12 @@
   }
 
   .header__btns-contact {
-    display: block;
     margin-left: auto;
   }
 
-  .contacts button:not(:last-child) {
-    margin-right: 11px;
+  .contacts {
+    display: flex;
+    gap: 16px;
   }
 
   .header__btns-service {
@@ -170,8 +170,9 @@
     letter-spacing: 0.5px;
   }
 
-  #more,
-  #span {
+  #more {
     display: inline;
   }
 }
+
+/* Доделать высоту у блока с парграфом */
