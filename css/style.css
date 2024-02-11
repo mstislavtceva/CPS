@@ -65,6 +65,7 @@ p {
 
 /* Глобально */
 body {
+  position: relative;
   min-width: 320px;
   font-family: "TTLake", sans-serif;
   font-weight: 400;
@@ -93,6 +94,189 @@ body {
   list-style: none;
 }
 
+/* Сайдбар */
+.sidebar {
+  /* display: none; */
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  background-color: var(--white-color);
+  z-index: 2;
+}
+
+.sidebar__header {
+  display: flex;
+  align-items: center;
+  padding: 18px 24px 19px 23px;
+}
+
+.sidebar__header button svg,
+.sidebar__btn-contacts button svg {
+  fill: #ff3e79;
+  fill-opacity: 1;
+  transition: fill-opacity 0.2s ease-in-out;
+}
+
+.sidebar__header button:hover svg,
+.sidebar__btn-contacts button:hover svg {
+  fill-opacity: 0.7;
+}
+
+.sidebar__header button:focus svg,
+.sidebar__btn-contacts button:focus svg {
+  fill-opacity: 1;
+}
+
+.sidebar__header button:focus,
+.sidebar__btn-contacts button:focus,
+.sidebar__header button:active,
+.sidebar__btn-contacts button:active {
+  outline: 2px solid var(--black-main-color);
+  outline-offset: 1px;
+}
+
+.sidebar__close {
+  margin-right: 17px;
+}
+
+.sidebar__logo {
+  width: 97px;
+  height: 51px;
+}
+
+.sidebar__search {
+  margin-left: auto;
+}
+
+.sidebar__nav {
+  padding: 25px 20px 243px 0;
+}
+
+.nav-services__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav-services__item {
+  width: 90%;
+}
+
+.nav-services__item a {
+  position: relative;
+  display: block;
+  padding: 6px 24px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: var(--black-main-color);
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-services__item--active a {
+  color: var(--grey-main-color);
+}
+
+.nav-services__item--active a::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 4px;
+  height: 32px;
+  background-color: var(--green-element-color);
+}
+
+.nav-services__item:hover a {
+  color: var(--grey-main-color);
+}
+
+.nav-services__item:hover a::before {
+  position: absolute;
+  content: "";
+  top: 3px;
+  left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 4px;
+  height: 32px;
+  background-color: var(--green-element-color);
+}
+
+.sidebar__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 23px;
+}
+
+.sidebar__btn-contacts {
+  display: flex;
+  gap: 17px;
+}
+
+.sidebar__link {
+  display: inline-block;
+  padding: 5px 0;
+  width: max-content;
+}
+
+.mail-link {
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.1px;
+}
+
+.mail-link::after {
+  content: "";
+  width: 0;
+  height: 1px;
+  display: block;
+  background-color: currentColor;
+  transition: width 0.2s ease-in;
+}
+
+.mail-link:hover::after {
+  width: 100%;
+}
+
+.tel-link {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.tel-link:hover {
+  transform: scale(1.1);
+}
+
+.sidebar__lang {
+  padding: 21px 23px 30px 21px;
+}
+
+.lang {
+  display: flex;
+  gap: 7px;
+}
+
+.lang__btn {
+  width: 25px;
+  height: 25px;
+  transition: color 0.2s ease-in-out;
+}
+
+.lang__btn:hover {
+  color: #ff3e79;
+}
+
 /* Хедер */
 .header {
   padding-top: 16px;
@@ -100,9 +284,19 @@ body {
   background-color: var(--white-color);
 }
 
-.header svg {
+.header svg,
+.sidebar svg {
   width: 100%;
   height: 100%;
+}
+
+.header button svg {
+  fill-opacity: 1;
+  transition: fill-opacity 0.3s ease-in-out;
+}
+
+.header button:hover svg {
+  fill-opacity: 0.7;
 }
 
 .header__container {
@@ -193,9 +387,14 @@ body {
   letter-spacing: 0.2px;
   white-space: nowrap;
   color: var(--grey-main-color);
+  transition: color 0.2s ease-in-out;
 }
 
-.services__item--focus a {
+.services__item:hover a {
+  color: var(--black-main-color);
+}
+
+.services__item--active a {
   border-radius: 6px;
   border: 2px solid var(--green-element-color);
 }
@@ -221,6 +420,12 @@ body {
 
 .describe__button-read {
   margin-bottom: 8px;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.describe__button-read:hover {
+  opacity: 0.7;
 }
 
 .btn-read {
