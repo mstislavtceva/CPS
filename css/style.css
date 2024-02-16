@@ -103,8 +103,15 @@ body {
   top: 0;
   left: 0;
   width: 320px;
+  height: 100vh;
   background-color: var(--white-color);
   z-index: 2;
+}
+
+.sidebar__container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .sidebar__header {
@@ -152,17 +159,13 @@ body {
 }
 
 .sidebar__nav {
-  padding: 25px 20px 243px 0;
+  padding: 25px 20px 25px 0;
 }
 
 .nav-services__list {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.nav-services__item {
-  width: 90%;
 }
 
 .nav-services__item a {
@@ -207,6 +210,10 @@ body {
   width: 4px;
   height: 32px;
   background-color: var(--green-element-color);
+}
+
+.sidebar__bottom {
+  margin-top: auto;
 }
 
 .sidebar__contacts {
@@ -291,6 +298,7 @@ body {
 }
 
 .header button svg {
+  fill: #ff3e79;
   fill-opacity: 1;
   transition: fill-opacity 0.3s ease-in-out;
 }

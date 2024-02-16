@@ -13,74 +13,78 @@
 
 <body>
   <aside class="sidebar">
-    <div class="sidebar__header">
-      <button class="sidebar__close btn" type="button">
-        <svg>
-          <use xlink:href="img/svg/sprite.svg#close-btn"></use>
-        </svg>
-      </button>
-      <a href="#" class="sidebar__logo">
-        <img src="img/cps-logo.svg" alt="Логотип сайта">
-      </a>
-      <button class="sidebar__search btn" type="button">
-        <svg>
-          <use xlink:href="img/svg/sprite.svg#search-btn"></use>
-        </svg>
-      </button>
-    </div>
-    <nav class="sidebar__nav nav-services">
-      <ul class="nav-services__list list-reset">
-        <li class="nav-services__item nav-services__item--active">
-          <a href="#">Ремонт техники</a>
-        </li>
-        <li class="nav-services__item">
-          <a href="#">Услуги и сервисы</a>
-        </li>
-        <li class="nav-services__item">
-          <a href="#">Корпоративным клиентам</a>
-        </li>
-        <li class="nav-services__item">
-          <a href="#">Продавцам техники</a>
-        </li>
-        <li class="nav-services__item">
-          <a href="#">Партнерам</a>
-        </li>
-        <li class="nav-services__item">
-          <a href="#">Производителям</a>
-        </li>
-        <li class="nav-services__item">
-          <a href="#">Наши сервисные центры</a>
-        </li>
-        <li class="nav-services__item">
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="sidebar__contacts">
-      <div class="sidebar__btn-contacts contacts">
-        <button class="contacts__btn btn" type="button">
+    <div class="sidebar__container">
+      <div class="sidebar__header">
+        <button class="sidebar__close btn" type="button">
           <svg>
-            <use xlink:href="img/svg/sprite.svg#call"></use>
+            <use xlink:href="img/svg/sprite.svg#close-btn"></use>
           </svg>
         </button>
-        <button class="contacts__btn btn" type="button">
+        <a href="#" class="sidebar__logo">
+          <img src="img/cps-logo.svg" alt="Логотип сайта">
+        </a>
+        <button class="sidebar__search btn" type="button">
           <svg>
-            <use xlink:href="img/svg/sprite.svg#chat"></use>
-          </svg>
-        </button>
-        <button class="contacts__btn btn" type="button">
-          <svg>
-            <use xlink:href="img/svg/sprite.svg#profile"></use>
+            <use xlink:href="img/svg/sprite.svg#search-btn"></use>
           </svg>
         </button>
       </div>
-      <a href="mailto:mail@cps.com" class="sidebar__link mail-link">mail@cps.com</a>
-      <a href="tel:+88008908900" class="sidebar__link tel-link">8 800 890 8900</a>
-    </div>
-    <div class="sidebar__lang lang">
-      <button class="lang__btn btn" type="button">RU</button>
-      <button class="lang__btn btn " type="button">EN</button>
-      <button class="lang__btn btn" type="button">CH</button>
+      <nav class="sidebar__nav nav-services">
+        <ul class="nav-services__list list-reset">
+          <li class="nav-services__item nav-services__item--active">
+            <a href="#">Ремонт техники</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Услуги и сервисы</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Корпоративным клиентам</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Продавцам техники</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Партнерам</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Производителям</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Наши сервисные центры</a>
+          </li>
+          <li class="nav-services__item">
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="sidebar__bottom">
+        <div class="sidebar__contacts">
+          <div class="sidebar__btn-contacts contacts">
+            <button class="contacts__btn btn" type="button">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#call"></use>
+              </svg>
+            </button>
+            <button class="contacts__btn btn" type="button">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#chat"></use>
+              </svg>
+            </button>
+            <button class="contacts__btn btn" type="button">
+              <svg>
+                <use xlink:href="img/svg/sprite.svg#profile"></use>
+              </svg>
+            </button>
+          </div>
+          <a href="mailto:mail@cps.com" class="sidebar__link mail-link">mail@cps.com</a>
+          <a href="tel:+88008908900" class="sidebar__link tel-link">8 800 890 8900</a>
+        </div>
+        <div class="sidebar__lang lang">
+          <button class="lang__btn btn" type="button">RU</button>
+          <button class="lang__btn btn " type="button">EN</button>
+          <button class="lang__btn btn" type="button">CH</button>
+        </div>
+      </div>
     </div>
   </aside>
   <header class="header">

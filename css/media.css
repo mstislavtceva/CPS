@@ -132,6 +132,11 @@
     display: block;
     min-width: max-content;
     margin-right: 10px;
+    transition: color 0.2s ease-in-out;
+  }
+
+  .btns-service button:hover span {
+    color: #ff3e79;
   }
 
   /* Хироу */
@@ -175,4 +180,34 @@
   }
 }
 
-/* Доделать высоту у блока с парграфом */
+@media (max-height: 807px) {
+  .sidebar__header {
+    padding: 18px 16px 19px 16px;
+  }
+
+  .sidebar__nav {
+    padding: 2px 20px 2px 0;
+  }
+
+  .nav-services__list {
+    gap: 12px;
+  }
+
+  .nav-services__item a {
+    padding: 6px 17px;
+  }
+
+  .sidebar__contacts {
+    padding: 23px 15px 10px;
+  }
+
+  .sidebar__lang {
+    padding: 0px 23px 30px 15px;
+  }
+}
+
+@media (max-height: 667px) {
+  .sidebar {
+    height: 667px;
+  }
+}
