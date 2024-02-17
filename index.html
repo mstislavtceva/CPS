@@ -6,6 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script defer src="js/script.js"></script>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/media.css">
   <title>CPS</title>
@@ -176,9 +179,9 @@
               советуют нас родным и близким.
             </p>
           </div>
-          <button class="describe__button-read btn-read btn" type="button">
+          <button id="describe-btn" class="describe__button-read btn-read btn" type="button">
             <span class="btn-read__icon"></span>
-            Читать далее
+            <span>Читать далее</span>
           </button>
         </div>
         <div class="describe__image">
@@ -186,6 +189,114 @@
         </div>
       </div>
     </section>
+
+    <section class="brands">
+      <div class="brands__title heading-2">
+        <h2 class="brands__heading heading-2__name">
+          Ремонт техники различных брендов
+        </h2>
+      </div>
+      <div class="brands__collection swiper">
+        <ul class="brands__list list-reset swiper-wrapper">
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image" src="img/lenovo-logo.png" alt="Логотип компании леново">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image" src="img/samsung-logo.png" alt="Логотип компании самсунг">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width-3" src="img/apple-logo.png" alt="Логотип компании эпл">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width" src="img/viewsonic-logo.png" alt="Логотип компании вьюсоник">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width" src="img/bosch-logo.png" alt="Логотип компании бош">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width-3" src="img/hp-logo.png" alt="Логотип компании леново эйчпи">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width-2" src="img/acer-logo.png" alt="Логотип компании асер">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width" src="img/sony-logo.png" alt="Логотип компании сони">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image" src="img/lenovo-logo.png" alt="Логотип компании леново">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image" src="img/samsung-logo.png" alt="Логотип компании самсунг">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="brands__item swiper-slide">
+            <a href="#" class="brand-card">
+              <img class="brand-card__image logo-width-3" src="img/apple-logo.png" alt="Логотип компании эпл">
+              <svg class="brand-card__button">
+                <use xlink:href="img/svg/sprite.svg#arrow-logo"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="brands__btn">
+        <button id="brands-btn" class="btn-read btn" type="button">
+          <span class="btn-read__icon"></span>
+          <span>Показать все</span>
+        </button>
+      </div>
+    </section>
+
   </main>
   <footer></footer>
 </body>
